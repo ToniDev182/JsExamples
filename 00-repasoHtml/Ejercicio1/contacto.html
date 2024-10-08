@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WillWorld/Contacto</title>
+    <style>
+        body {
+            font-family: Arial;
+            /* tipo de fuente Arial*/
+            margin: 0;
+            /* elimina el margen de la pagina */
+            padding: 0;
+            /*es el espacio interno, entre el contenido y el borde. */
+            background-color: #202420;
+            /* Color del fondo */
+        }
+
+        header {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #2d7c25;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        main h2 {
+            color: rgb(238, 234, 234);
+        }
+
+        main form {
+            background-color: #3c3f3f;
+            padding: 50px;
+            border-radius: 5px;
+            display: inline-block;
+            color: white;
+        }
+
+        img {
+            width: 450px;
+            /* ajustamos el ancho */
+            height: 390px;
+            /* ajustamos el alto */
+        }
+
+        main label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+
+        main textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        main textarea {
+            resize: none;
+            /* evita que el usuario modifique el tamaño de la caja */
+        }
+
+        main button {
+            background-color: #46694c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        main button:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2> Bienvenido Wild World </h2>
+        <img src="conjunto-animales-salvajes_1308-29055.avif" alt="Descripción de la imagen">
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Inicio.html"><b>Inicio</b></a></li>
+            <li><a href="segunda.html"><b>Animales</b></a></li>
+            <li><a href="contacto.html"><b>Contacto</b></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="edad" required>
+            <br>
+            <br>
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+</body>
+
+</html>
